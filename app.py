@@ -6,6 +6,7 @@ from sxtwl import fromSolar
 from io import StringIO
 import streamlit.components.v1 as components
 from ichingshifa import ichingshifa
+import urllib.request
 
 
 
@@ -21,12 +22,14 @@ def st_capture(output_func):
         yield
 
 def get_file_content_as_string(path):
-    url = 'https://raw.githubusercontent.com/SweatRose/IchingShifa/main/' + path
+    url = 'https://raw.githubusercontent.com/adminlove520/IchingShifa/main/' + path
+    # response = urllib.request.urlopen(url)
     response = urllib.request.urlopen(url)
     return response.read().decode("utf-8")
 
 def get_file_content_as_string1(path):
-    url = 'https://raw.githubusercontent.com/SweatRose/IchingShifa/main/' + path
+    url = 'https://raw.githubusercontent.com/adminlove520/IchingShifa/main/' + path
+    # response = urllib.request.urlopen(url)
     response = urllib.request.urlopen(url)
     return response.read().decode("utf-8")
 
