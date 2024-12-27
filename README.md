@@ -1,10 +1,10 @@
-# Python IchingShifa Python 周易 筮法 六爻 卜卦 (stalk divination)
+# 周易 筮法 六爻 卜卦
 
 "筮"是傳統的周易起卦方式。古人以50根蓍草作為占卜工具，名為策，故此法亦稱"籌策"占卜。《周易系辭上傳》辭曰："大衍之數五十，其用四十有九。分而為二以像兩，掛一以像三， 揲之以四以像四時，歸奇於扐以像閏，五歲再閏，故再扐而後掛。 天一地二，天三地四，天五地六，天七地八，天九地十。天數五，地數五，五位相得而各有合。天數二十有五，地數三十，凡天地之數五十有五。此所以成變化而行鬼神也。"整個起卦過程是要求得十八個隨機數目，當中包括"六次"(即六根爻)的"三變"。
 
 
 
-## **1. 大衍之數、太一、分二、掛一、揲四、歸奇 The number of DaYan**︰
+## **1. 大衍之數、太一、分二、掛一、揲四、歸奇**
 
 ```python
 #一變的過程
@@ -23,7 +23,7 @@ if right_extract == 0:
 bian  = left_extract + right_extract + guayi #一變，其餘二變倣效此法，如果做for loop 這裡的掛一可以拿走，不用加上。
 ```
 
-## **2. 處理變(動)爻的方法︰The way in handling the change of line(s)(yao(s))**
+## **2. 處理變(動)爻的方法**
 
 1. 凡卦六爻皆不變，則占本卦彖辭，而以內卦為貞，外卦為悔，彖辭為卦下之辭。
 
@@ -42,18 +42,19 @@ bian  = left_extract + right_extract + guayi #一變，其餘二變倣效此法�
 _參考自【宋】‧朱熹、蔡元定《易學啟蒙》卷下 考變占︰_
 
 
-## **3. 納甲 Najia**
+## **3. 納甲 **
 其後漢元帝師從梁人焦延壽的京房開創京氏易學，把筮法加入干支納甲，後世學者再加以五行、五星、六親及二十八宿等加以詳推。
 
 
 
-## **4. 安裝套件 Installation**:
+## **4. 安裝 **:
 ```
 pip install sxtwl
+# 需要安装c++环境
 pip install --upgrade ichingshifa
 ```
 
-## **5. 快速起卦 Quick Start**:
+## **5. 快速起卦**:
 ```
 from ichingshifa import ichingshifa #導入周易筮法套件庫 Import ichingshifa
 
